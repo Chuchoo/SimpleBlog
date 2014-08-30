@@ -12205,3 +12205,1237 @@ Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-24 10:07:21 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 10:07:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToUsers (20140830194821)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "users" ADD "email" varchar(255) DEFAULT '' NOT NULL[0m
+SQLite3::SQLException: duplicate column name: email: ALTER TABLE "users" ADD "email" varchar(255) DEFAULT '' NOT NULL
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToUsers (20140830194821)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "users" ADD "email" varchar(255) DEFAULT '' NOT NULL[0m
+SQLite3::SQLException: duplicate column name: email: ALTER TABLE "users" ADD "email" varchar(255) DEFAULT '' NOT NULL
+  [1m[35m (0.0ms)[0m  rollback transaction
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 16:33:26 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.4) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (297.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 17:25:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.4) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (238.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 17:25:49 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.4) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (326.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 17:25:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.4) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (273.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 18:04:03 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.4) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (245.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 18:04:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.4) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (41.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (241.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT version FROM schema_migrations[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToUsers (20140830194821)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToUsers (20140830194821)
+  [1m[36m (14.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (13.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20140726180440)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (4.0ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "content" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140726180440"]]
+  [1m[35m (8.0ms)[0m  commit transaction
+Migrating to DeviseCreateInstalls (20140823042624)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  CREATE TABLE "installs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (3.0ms)[0m  [1mCREATE UNIQUE INDEX "index_installs_on_email" ON "installs" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_installs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_installs_on_email' AND type='index'
+
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "index_installs_on_reset_password_token" ON "installs" ("reset_password_token")[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140823042624"]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+Migrating to DeviseCreateUsers (20140823124819)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140823124819"]]
+  [1m[35m (8.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_installs_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_installs_on_reset_password_token' AND type='index'
+
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_installs_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_installs_on_email' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 18:54:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#welcome as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered pages/welcome.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 591ms (Views: 466.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 18:54:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 18:54:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 18:54:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 18:54:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 18:54:17 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 18:54:17 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 18:54:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 18:54:17 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 18:54:22 -0400
+Processing by PagesController#welcome as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered pages/welcome.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 71ms (Views: 67.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-08-30 18:54:24 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 81ms (Views: 77.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-08-30 18:54:27 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 75ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-08-30 18:54:33 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 72ms (Views: 67.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-08-30 18:54:35 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (379.0ms)
+  Rendered posts/new.html.erb within layouts/application (461.0ms)
+Completed 200 OK in 536ms (Views: 526.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-08-30 18:55:15 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (9.0ms)
+  Rendered posts/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 94ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 18:55:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 18:55:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 18:55:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 18:55:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 18:55:15 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 18:55:15 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 18:55:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 18:55:15 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-08-30 18:55:17 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 73ms (Views: 69.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 18:55:19 -0400
+Processing by PagesController#welcome as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered pages/welcome.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 75ms (Views: 72.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-08-30 18:56:52 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (6.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (113.0ms)
+Completed 200 OK in 249ms (Views: 217.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 18:56:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 18:56:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 18:56:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 18:56:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 18:56:53 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 18:56:53 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 18:56:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 18:56:53 -0400
+
+
+Started GET "/users" for 127.0.0.1 at 2014-08-30 19:02:24 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (20.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (80.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (786.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-30 19:05:00 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 284ms (Views: 166.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:05:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:00 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:05:00 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:00 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:01 -0400
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-30 19:05:22 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5IDmlpDUh8MeC248c85EKnjT4zplTc/caYVW4/pGuDA=", "user"=>{"email"=>"qweqwe@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'qweqwe@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 118ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5IDmlpDUh8MeC248c85EKnjT4zplTc/caYVW4/pGuDA=", "user"=>{"email"=>"qweqwe@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 446ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:05:22 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:05:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:23 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:23 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:23 -0400
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2014-08-30 19:05:28 -0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.erb (5.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 136ms (Views: 133.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:05:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:05:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:29 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:29 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:35 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:05:35 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:05:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:35 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:05:35 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-30 19:05:41 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 103ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-08-30 19:05:46 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.1.236) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (22.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (617.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-08-30 19:06:17 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:17 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:06:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:06:18 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:18 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:18 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-08-30 19:06:22 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 101ms (Views: 96.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-08-30 19:06:23 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-08-30 19:06:26 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 122ms (Views: 118.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 19:06:27 -0400
+Processing by PagesController#welcome as HTML
+  [1m[35mPost Load (2.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered pages/welcome.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 77ms (Views: 72.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-08-30 19:06:28 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 81ms (Views: 77.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-08-30 19:06:31 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (17.0ms)
+  Rendered posts/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 114ms (Views: 104.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-08-30 19:06:57 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5IDmlpDUh8MeC248c85EKnjT4zplTc/caYVW4/pGuDA=", "post"=>{"title"=>"Hi there!", "content"=>"Hi my first post after all my post got deleted."}, "commit"=>"Submit"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "posts" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Hi my first post after all my post got deleted."], ["created_at", "2014-08-30 23:06:57.517783"], ["title", "Hi there!"], ["updated_at", "2014-08-30 23:06:57.517783"]]
+  [1m[35m (12.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 60ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-08-30 19:06:57 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 122ms (Views: 115.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:06:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:06:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:58 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:58 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:06:58 -0400
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-08-30 19:07:03 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (2.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 88ms (Views: 79.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:07:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:04 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:07:04 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:04 -0400
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-08-30 19:07:07 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 113ms (Views: 105.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:07:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:07 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:07:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:07 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:07 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:07:07 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 19:07:10 -0400
+Processing by PagesController#welcome as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (5.0ms)
+  Rendered pages/welcome.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 102ms (Views: 99.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-08-30 19:07:13 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 82ms (Views: 74.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-08-30 19:07:15 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 84ms (Views: 81.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-08-30 19:07:18 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 74ms (Views: 68.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-30 19:07:25 -0400
+Processing by PagesController#welcome as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (3.0ms)
+  Rendered pages/welcome.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 94ms (Views: 91.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-08-30 19:09:42 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 153ms (Views: 141.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:09:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:09:43 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:09:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 19:09:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:09:43 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:09:43 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:09:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:09:43 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-08-30 19:09:48 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (1.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=2):
+  app/controllers/posts_controller.rb:62:in `set_post'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (336.0ms)
+
+
+Started GET "/posts/!" for 127.0.0.1 at 2014-08-30 19:10:29 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"!"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=!):
+  app/controllers/posts_controller.rb:62:in `set_post'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (222.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-08-30 19:10:38 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (1.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 85ms (Views: 77.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:10:39 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:10:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:39 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:39 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:39 -0400
+
+
+Started GET "/posts/%201" for 127.0.0.1 at 2014-08-30 19:10:50 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>" 1"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 80ms (Views: 73.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:10:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:50 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:10:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:51 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:51 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:10:51 -0400
+
+
+Started GET "/posts/%202" for 127.0.0.1 at 2014-08-30 19:11:06 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>" 2"}
+  [1m[35mPost Load (1.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'= 2):
+  app/controllers/posts_controller.rb:62:in `set_post'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (299.0ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-08-30 19:11:29 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=2):
+  app/controllers/posts_controller.rb:62:in `set_post'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (205.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-08-30 19:11:36 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (1.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 96ms (Views: 84.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-08-30 19:11:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-30 19:11:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-30 19:11:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-30 19:11:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-30 19:11:37 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-08-30 19:11:37 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-08-30 19:11:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-30 19:11:37 -0400
