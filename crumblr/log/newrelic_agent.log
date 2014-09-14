@@ -465,3 +465,22 @@
 [09/14/14 13:57:56 -0400 Sugat-HP (6520)] INFO : Installing Rails 4 Error instrumentation
 [09/14/14 13:57:56 -0400 Sugat-HP (6520)] INFO : Finished instrumentation
 [09/14/14 13:58:18 -0400 Sugat-HP (6520)] INFO : Doing deferred dependency-detection before Rack startup
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : Starting the New Relic agent in "development" environment.
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : Reading configuration from config/newrelic.yml
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : New Relic Agent Developer Mode enabled.
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] ERROR : No application name configured.
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] ERROR : value set for app_name in the development 
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] ERROR : environment.
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : Installing ActiveRecord 4 instrumentation
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : Installing Net instrumentation
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : Installing deferred Rack instrumentation
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : Installing Rack::Builder middleware instrumentation
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : Installing Rails 3+ middleware instrumentation
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : Installing Rails 4 Controller instrumentation
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : Installing Rails 4 view instrumentation
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : Installing Rails 4 Error instrumentation
+[09/14/14 16:52:44 -0400 Sugat-HP (6428)] INFO : Finished instrumentation
+[09/14/14 16:52:57 -0400 Sugat-HP (6428)] INFO : Doing deferred dependency-detection before Rack startup

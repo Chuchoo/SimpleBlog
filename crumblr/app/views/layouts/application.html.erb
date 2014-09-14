@@ -34,14 +34,19 @@
 			</ul>
 			<h1><%= link_to "ThinkBlog","/" %><small>  //Keep pondering..</small></h1>				
 		</div>
+		<% flash.each do |name, msg| %>
+			<div class="alert text-center alert-<%= name == notice ? "success" : "error" %>">
+		 		<a class="close" data-dismiss="alert">x</a>
+					<%= msg %>
+			</div>
+		<% end %>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 					
 				<%= yield %>
 			</div>
 		</div>		
-		 <p class="notice"><%= notice %></p>
-		 <p class="alert"><%= alert %></p>
+		
 		</div>	
 	</body>
 </html>
