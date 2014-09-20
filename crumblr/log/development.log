@@ -19311,3 +19311,317 @@ Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-09-14 16:58:17 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 16:58:17 -0400
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-09-14 17:00:55 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 143ms (Views: 134.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-09-14 17:01:12 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-09-14 17:01:13 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 56ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-09-14 17:01:19 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vcVyw5jUmGiDffScfeRndQF3hP2+uWtyNtH+E5R0CmI="}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 17:01:19 -0400
+Processing by PagesController#welcome as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (3.0ms)
+  Rendered pages/welcome.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-09-14 17:01:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 17:01:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 17:01:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 17:01:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-14 17:01:20 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-14 17:01:20 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-09-14 17:01:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 17:01:20 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-14 17:01:22 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-09-14 17:01:25 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-09-14 17:01:26 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 50ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 17:01:28 -0400
+Processing by PagesController#welcome as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (7.0ms)
+  Rendered pages/welcome.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 120ms (Views: 115.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-09-14 17:01:28 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-09-14 17:01:30 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 17:00:16 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#welcome as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (57.0ms)
+  Rendered pages/welcome.html.erb within layouts/application (171.0ms)
+Completed 200 OK in 848ms (Views: 712.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 17:00:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 17:00:17 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-09-20 17:00:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 17:00:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 17:00:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 17:00:18 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-09-20 17:00:18 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-09-20 17:00:18 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-20 17:00:21 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (6.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (477.0ms)
+Completed 200 OK in 596ms (Views: 538.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-09-20 17:00:23 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (3.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 80ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-20 17:00:28 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 61ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-09-20 17:00:29 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-09-20 17:00:30 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-09-20 17:00:32 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-09-20 17:00:35 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 17:00:36 -0400
+Processing by PagesController#welcome as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (5.0ms)
+  Rendered pages/welcome.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 17:00:38 -0400
+Processing by PagesController#welcome as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (2.0ms)
+  Rendered pages/welcome.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-09-20 17:00:48 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-09-20 17:00:51 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-20 17:00:53 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-09-20 17:00:58 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-20 17:01:03 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 61ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-09-20 17:01:03 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-20 17:01:05 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 61ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-09-20 17:01:06 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 57ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-20 17:02:29 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 64ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-09-20 17:02:40 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MGDaThUSPZnshZEnhtILJvF9YXplZiYz3oQClkxLr9M=", "user"=>{"email"=>"gitkalu@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'gitkalu@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-09-20 21:02:40.700946"], ["last_sign_in_at", "2014-09-14 20:58:03.806932"], ["sign_in_count", 7], ["updated_at", "2014-09-20 21:02:40.705946"]]
+  [1m[36m (26.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 623ms (ActiveRecord: 31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 17:02:40 -0400
+Processing by PagesController#welcome as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (2.0ms)
+  Rendered pages/welcome.html.erb within layouts/application (15.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 58ms (Views: 54.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-09-20 17:02:58 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 128ms (Views: 121.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-09-20 17:03:07 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 53ms (Views: 49.0ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-09-20 17:03:09 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"l2L0309g4s7NH/7oP5zwX1udQnlW124IfVsVE4rpmvw="}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 48ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 17:03:09 -0400
+Processing by PagesController#welcome as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (5.0ms)
+  Rendered pages/welcome.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 58ms (Views: 54.0ms | ActiveRecord: 1.0ms)

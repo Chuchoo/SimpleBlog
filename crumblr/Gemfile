@@ -47,3 +47,5 @@ gem 'newrelic_rpm'
 
 # Add user authentication using devise
 gem 'devise'
+#Add facebook notification via Omniauth
+gem 'omniauth-facebook'
