@@ -558,3 +558,350 @@
 [09/27/14 11:29:02 -0400 Sugat-HP (8860)] INFO : Installing Rails 4 view instrumentation
 [09/27/14 11:29:02 -0400 Sugat-HP (8860)] INFO : Installing Rails 4 Error instrumentation
 [09/27/14 11:29:02 -0400 Sugat-HP (8860)] INFO : Finished instrumentation
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] INFO : Starting the New Relic agent in "development" environment.
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] INFO : Reading configuration from config/newrelic.yml
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] INFO : New Relic Agent Developer Mode enabled.
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] ERROR : No application name configured.
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] ERROR : value set for app_name in the development 
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] ERROR : environment.
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] INFO : Installing ActiveRecord 4 instrumentation
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] INFO : Installing Net instrumentation
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] INFO : Installing deferred Rack instrumentation
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] INFO : Installing Rack::Builder middleware instrumentation
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] INFO : Installing Rails 3+ middleware instrumentation
+[09/27/14 11:37:18 -0400 Sugat-HP (11636)] INFO : Installing Rails 4 Controller instrumentation
+[09/27/14 11:37:19 -0400 Sugat-HP (11636)] INFO : Installing Rails 4 view instrumentation
+[09/27/14 11:37:19 -0400 Sugat-HP (11636)] INFO : Installing Rails 4 Error instrumentation
+[09/27/14 11:37:19 -0400 Sugat-HP (11636)] INFO : Finished instrumentation
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] INFO : Starting the New Relic agent in "development" environment.
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] INFO : Reading configuration from config/newrelic.yml
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] INFO : New Relic Agent Developer Mode enabled.
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] ERROR : No application name configured.
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] ERROR : value set for app_name in the development 
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] ERROR : environment.
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] INFO : Installing ActiveRecord 4 instrumentation
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] INFO : Installing Net instrumentation
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] INFO : Installing deferred Rack instrumentation
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] INFO : Installing Rack::Builder middleware instrumentation
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] INFO : Installing Rails 3+ middleware instrumentation
+[09/27/14 14:39:42 -0400 Sugat-HP (10492)] INFO : Installing Rails 4 Controller instrumentation
+[09/27/14 14:39:43 -0400 Sugat-HP (10492)] INFO : Installing Rails 4 view instrumentation
+[09/27/14 14:39:43 -0400 Sugat-HP (10492)] INFO : Installing Rails 4 Error instrumentation
+[09/27/14 14:39:43 -0400 Sugat-HP (10492)] INFO : Finished instrumentation
+[09/27/14 16:08:59 -0400 Sugat-HP (12592)] INFO : Starting the New Relic agent in "development" environment.
+[09/27/14 16:08:59 -0400 Sugat-HP (12592)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/27/14 16:08:59 -0400 Sugat-HP (12592)] INFO : Reading configuration from config/newrelic.yml
+[09/27/14 16:08:59 -0400 Sugat-HP (12592)] INFO : New Relic Agent Developer Mode enabled.
+[09/27/14 16:08:59 -0400 Sugat-HP (12592)] ERROR : No application name configured.
+[09/27/14 16:08:59 -0400 Sugat-HP (12592)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/27/14 16:08:59 -0400 Sugat-HP (12592)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/27/14 16:08:59 -0400 Sugat-HP (12592)] ERROR : value set for app_name in the development 
+[09/27/14 16:08:59 -0400 Sugat-HP (12592)] ERROR : environment.
+[09/27/14 16:09:00 -0400 Sugat-HP (12592)] INFO : Installing ActiveRecord 4 instrumentation
+[09/27/14 16:09:00 -0400 Sugat-HP (12592)] INFO : Installing Net instrumentation
+[09/27/14 16:09:00 -0400 Sugat-HP (12592)] INFO : Installing deferred Rack instrumentation
+[09/27/14 16:09:00 -0400 Sugat-HP (12592)] INFO : Installing Rack::Builder middleware instrumentation
+[09/27/14 16:09:00 -0400 Sugat-HP (12592)] INFO : Installing Rails 3+ middleware instrumentation
+[09/27/14 16:09:00 -0400 Sugat-HP (12592)] INFO : Installing Rails 4 Controller instrumentation
+[09/27/14 16:09:00 -0400 Sugat-HP (12592)] INFO : Installing Rails 4 view instrumentation
+[09/27/14 16:09:00 -0400 Sugat-HP (12592)] INFO : Installing Rails 4 Error instrumentation
+[09/27/14 16:09:00 -0400 Sugat-HP (12592)] INFO : Finished instrumentation
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] INFO : Starting the New Relic agent in "development" environment.
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] INFO : Reading configuration from config/newrelic.yml
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] INFO : New Relic Agent Developer Mode enabled.
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] ERROR : No application name configured.
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] ERROR : value set for app_name in the development 
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] ERROR : environment.
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] INFO : Installing ActiveRecord 4 instrumentation
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] INFO : Installing Net instrumentation
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] INFO : Installing deferred Rack instrumentation
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] INFO : Installing Rack::Builder middleware instrumentation
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] INFO : Installing Rails 3+ middleware instrumentation
+[09/27/14 16:18:45 -0400 Sugat-HP (12088)] INFO : Installing Rails 4 Controller instrumentation
+[09/27/14 16:18:46 -0400 Sugat-HP (12088)] INFO : Installing Rails 4 view instrumentation
+[09/27/14 16:18:46 -0400 Sugat-HP (12088)] INFO : Installing Rails 4 Error instrumentation
+[09/27/14 16:18:46 -0400 Sugat-HP (12088)] INFO : Finished instrumentation
+[09/27/14 16:57:00 -0400 Sugat-HP (12152)] INFO : Starting the New Relic agent in "development" environment.
+[09/27/14 16:57:00 -0400 Sugat-HP (12152)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/27/14 16:57:00 -0400 Sugat-HP (12152)] INFO : Reading configuration from config/newrelic.yml
+[09/27/14 16:57:00 -0400 Sugat-HP (12152)] INFO : New Relic Agent Developer Mode enabled.
+[09/27/14 16:57:00 -0400 Sugat-HP (12152)] ERROR : No application name configured.
+[09/27/14 16:57:00 -0400 Sugat-HP (12152)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/27/14 16:57:00 -0400 Sugat-HP (12152)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/27/14 16:57:00 -0400 Sugat-HP (12152)] ERROR : value set for app_name in the development 
+[09/27/14 16:57:00 -0400 Sugat-HP (12152)] ERROR : environment.
+[09/27/14 16:57:01 -0400 Sugat-HP (12152)] INFO : Installing ActiveRecord 4 instrumentation
+[09/27/14 16:57:01 -0400 Sugat-HP (12152)] INFO : Installing Net instrumentation
+[09/27/14 16:57:01 -0400 Sugat-HP (12152)] INFO : Installing deferred Rack instrumentation
+[09/27/14 16:57:01 -0400 Sugat-HP (12152)] INFO : Installing Rack::Builder middleware instrumentation
+[09/27/14 16:57:01 -0400 Sugat-HP (12152)] INFO : Installing Rails 3+ middleware instrumentation
+[09/27/14 16:57:01 -0400 Sugat-HP (12152)] INFO : Installing Rails 4 Controller instrumentation
+[09/27/14 16:57:01 -0400 Sugat-HP (12152)] INFO : Installing Rails 4 view instrumentation
+[09/27/14 16:57:01 -0400 Sugat-HP (12152)] INFO : Installing Rails 4 Error instrumentation
+[09/27/14 16:57:01 -0400 Sugat-HP (12152)] INFO : Finished instrumentation
+[09/28/14 10:15:48 -0400 Sugat-HP (12936)] INFO : Starting the New Relic agent in "development" environment.
+[09/28/14 10:15:48 -0400 Sugat-HP (12936)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/28/14 10:15:48 -0400 Sugat-HP (12936)] INFO : Reading configuration from config/newrelic.yml
+[09/28/14 10:15:48 -0400 Sugat-HP (12936)] INFO : New Relic Agent Developer Mode enabled.
+[09/28/14 10:15:48 -0400 Sugat-HP (12936)] ERROR : No application name configured.
+[09/28/14 10:15:48 -0400 Sugat-HP (12936)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/28/14 10:15:48 -0400 Sugat-HP (12936)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/28/14 10:15:48 -0400 Sugat-HP (12936)] ERROR : value set for app_name in the development 
+[09/28/14 10:15:48 -0400 Sugat-HP (12936)] ERROR : environment.
+[09/28/14 10:15:48 -0400 Sugat-HP (12936)] INFO : Installing ActiveRecord 4 instrumentation
+[09/28/14 10:15:48 -0400 Sugat-HP (12936)] INFO : Installing Net instrumentation
+[09/28/14 10:15:49 -0400 Sugat-HP (12936)] INFO : Installing deferred Rack instrumentation
+[09/28/14 10:15:49 -0400 Sugat-HP (12936)] INFO : Installing Rack::Builder middleware instrumentation
+[09/28/14 10:15:49 -0400 Sugat-HP (12936)] INFO : Installing Rails 3+ middleware instrumentation
+[09/28/14 10:15:49 -0400 Sugat-HP (12936)] INFO : Installing Rails 4 Controller instrumentation
+[09/28/14 10:15:49 -0400 Sugat-HP (12936)] INFO : Installing Rails 4 view instrumentation
+[09/28/14 10:15:49 -0400 Sugat-HP (12936)] INFO : Installing Rails 4 Error instrumentation
+[09/28/14 10:15:49 -0400 Sugat-HP (12936)] INFO : Finished instrumentation
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] INFO : Starting the New Relic agent in "development" environment.
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] INFO : Reading configuration from config/newrelic.yml
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] INFO : New Relic Agent Developer Mode enabled.
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] ERROR : No application name configured.
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] ERROR : value set for app_name in the development 
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] ERROR : environment.
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] INFO : Installing ActiveRecord 4 instrumentation
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] INFO : Installing Net instrumentation
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] INFO : Installing deferred Rack instrumentation
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] INFO : Installing Rack::Builder middleware instrumentation
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] INFO : Installing Rails 3+ middleware instrumentation
+[09/28/14 11:07:07 -0400 Sugat-HP (13536)] INFO : Installing Rails 4 Controller instrumentation
+[09/28/14 11:07:08 -0400 Sugat-HP (13536)] INFO : Installing Rails 4 view instrumentation
+[09/28/14 11:07:08 -0400 Sugat-HP (13536)] INFO : Installing Rails 4 Error instrumentation
+[09/28/14 11:07:08 -0400 Sugat-HP (13536)] INFO : Finished instrumentation
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] INFO : Starting the New Relic agent in "development" environment.
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] INFO : Reading configuration from config/newrelic.yml
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] INFO : New Relic Agent Developer Mode enabled.
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] ERROR : No application name configured.
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] ERROR : value set for app_name in the development 
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] ERROR : environment.
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] INFO : Installing ActiveRecord 4 instrumentation
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] INFO : Installing Net instrumentation
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] INFO : Installing deferred Rack instrumentation
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] INFO : Installing Rack::Builder middleware instrumentation
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] INFO : Installing Rails 3+ middleware instrumentation
+[09/28/14 16:08:31 -0400 Sugat-HP (13820)] INFO : Installing Rails 4 Controller instrumentation
+[09/28/14 16:08:32 -0400 Sugat-HP (13820)] INFO : Installing Rails 4 view instrumentation
+[09/28/14 16:08:32 -0400 Sugat-HP (13820)] INFO : Installing Rails 4 Error instrumentation
+[09/28/14 16:08:32 -0400 Sugat-HP (13820)] INFO : Finished instrumentation
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] INFO : Starting the New Relic agent in "development" environment.
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] INFO : Reading configuration from config/newrelic.yml
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] INFO : New Relic Agent Developer Mode enabled.
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] ERROR : No application name configured.
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] ERROR : value set for app_name in the development 
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] ERROR : environment.
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] INFO : Installing ActiveRecord 4 instrumentation
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] INFO : Installing Net instrumentation
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] INFO : Installing deferred Rack instrumentation
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] INFO : Installing Rack::Builder middleware instrumentation
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] INFO : Installing Rails 3+ middleware instrumentation
+[09/28/14 16:09:55 -0400 Sugat-HP (11096)] INFO : Installing Rails 4 Controller instrumentation
+[09/28/14 16:09:56 -0400 Sugat-HP (11096)] INFO : Installing Rails 4 view instrumentation
+[09/28/14 16:09:56 -0400 Sugat-HP (11096)] INFO : Installing Rails 4 Error instrumentation
+[09/28/14 16:09:56 -0400 Sugat-HP (11096)] INFO : Finished instrumentation
+[09/28/14 17:06:07 -0400 Sugat-HP (4852)] INFO : Starting the New Relic agent in "development" environment.
+[09/28/14 17:06:07 -0400 Sugat-HP (4852)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/28/14 17:06:07 -0400 Sugat-HP (4852)] INFO : Reading configuration from config/newrelic.yml
+[09/28/14 17:06:07 -0400 Sugat-HP (4852)] INFO : New Relic Agent Developer Mode enabled.
+[09/28/14 17:06:07 -0400 Sugat-HP (4852)] ERROR : No application name configured.
+[09/28/14 17:06:07 -0400 Sugat-HP (4852)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/28/14 17:06:07 -0400 Sugat-HP (4852)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/28/14 17:06:07 -0400 Sugat-HP (4852)] ERROR : value set for app_name in the development 
+[09/28/14 17:06:07 -0400 Sugat-HP (4852)] ERROR : environment.
+[09/28/14 17:06:08 -0400 Sugat-HP (4852)] INFO : Installing ActiveRecord 4 instrumentation
+[09/28/14 17:06:08 -0400 Sugat-HP (4852)] INFO : Installing Net instrumentation
+[09/28/14 17:06:08 -0400 Sugat-HP (4852)] INFO : Installing deferred Rack instrumentation
+[09/28/14 17:06:08 -0400 Sugat-HP (4852)] INFO : Installing Rack::Builder middleware instrumentation
+[09/28/14 17:06:08 -0400 Sugat-HP (4852)] INFO : Installing Rails 3+ middleware instrumentation
+[09/28/14 17:06:08 -0400 Sugat-HP (4852)] INFO : Installing Rails 4 Controller instrumentation
+[09/28/14 17:06:08 -0400 Sugat-HP (4852)] INFO : Installing Rails 4 view instrumentation
+[09/28/14 17:06:08 -0400 Sugat-HP (4852)] INFO : Installing Rails 4 Error instrumentation
+[09/28/14 17:06:08 -0400 Sugat-HP (4852)] INFO : Finished instrumentation
+[09/28/14 17:06:31 -0400 Sugat-HP (4852)] INFO : Doing deferred dependency-detection before Rack startup
+[09/28/14 17:55:13 -0400 Sugat-HP (10252)] INFO : Starting the New Relic agent in "development" environment.
+[09/28/14 17:55:13 -0400 Sugat-HP (10252)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/28/14 17:55:13 -0400 Sugat-HP (10252)] INFO : Reading configuration from config/newrelic.yml
+[09/28/14 17:55:13 -0400 Sugat-HP (10252)] INFO : New Relic Agent Developer Mode enabled.
+[09/28/14 17:55:13 -0400 Sugat-HP (10252)] ERROR : No application name configured.
+[09/28/14 17:55:13 -0400 Sugat-HP (10252)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/28/14 17:55:13 -0400 Sugat-HP (10252)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/28/14 17:55:13 -0400 Sugat-HP (10252)] ERROR : value set for app_name in the development 
+[09/28/14 17:55:13 -0400 Sugat-HP (10252)] ERROR : environment.
+[09/28/14 17:55:14 -0400 Sugat-HP (10252)] INFO : Installing ActiveRecord 4 instrumentation
+[09/28/14 17:55:14 -0400 Sugat-HP (10252)] INFO : Installing Net instrumentation
+[09/28/14 17:55:14 -0400 Sugat-HP (10252)] INFO : Installing deferred Rack instrumentation
+[09/28/14 17:55:14 -0400 Sugat-HP (10252)] INFO : Installing Rack::Builder middleware instrumentation
+[09/28/14 17:55:14 -0400 Sugat-HP (10252)] INFO : Installing Rails 3+ middleware instrumentation
+[09/28/14 17:55:14 -0400 Sugat-HP (10252)] INFO : Installing Rails 4 Controller instrumentation
+[09/28/14 17:55:14 -0400 Sugat-HP (10252)] INFO : Installing Rails 4 view instrumentation
+[09/28/14 17:55:14 -0400 Sugat-HP (10252)] INFO : Installing Rails 4 Error instrumentation
+[09/28/14 17:55:14 -0400 Sugat-HP (10252)] INFO : Finished instrumentation
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] INFO : Starting the New Relic agent in "development" environment.
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] INFO : Reading configuration from config/newrelic.yml
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] INFO : New Relic Agent Developer Mode enabled.
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] ERROR : No application name configured.
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] ERROR : value set for app_name in the development 
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] ERROR : environment.
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] INFO : Installing ActiveRecord 4 instrumentation
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] INFO : Installing Net instrumentation
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] INFO : Installing deferred Rack instrumentation
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] INFO : Installing Rack::Builder middleware instrumentation
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] INFO : Installing Rails 3+ middleware instrumentation
+[09/28/14 18:19:21 -0400 Sugat-HP (11280)] INFO : Installing Rails 4 Controller instrumentation
+[09/28/14 18:19:22 -0400 Sugat-HP (11280)] INFO : Installing Rails 4 view instrumentation
+[09/28/14 18:19:22 -0400 Sugat-HP (11280)] INFO : Installing Rails 4 Error instrumentation
+[09/28/14 18:19:22 -0400 Sugat-HP (11280)] INFO : Finished instrumentation
+[09/28/14 18:19:42 -0400 Sugat-HP (11280)] INFO : Doing deferred dependency-detection before Rack startup
+[09/28/14 18:31:48 -0400 Sugat-HP (14756)] INFO : Starting the New Relic agent in "development" environment.
+[09/28/14 18:31:48 -0400 Sugat-HP (14756)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/28/14 18:31:48 -0400 Sugat-HP (14756)] INFO : Reading configuration from config/newrelic.yml
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] INFO : New Relic Agent Developer Mode enabled.
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] ERROR : No application name configured.
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] ERROR : value set for app_name in the development 
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] ERROR : environment.
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] INFO : Installing ActiveRecord 4 instrumentation
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] INFO : Installing Net instrumentation
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] INFO : Installing deferred Rack instrumentation
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] INFO : Installing Rack::Builder middleware instrumentation
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] INFO : Installing Rails 3+ middleware instrumentation
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] INFO : Installing Rails 4 Controller instrumentation
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] INFO : Installing Rails 4 view instrumentation
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] INFO : Installing Rails 4 Error instrumentation
+[09/28/14 18:31:49 -0400 Sugat-HP (14756)] INFO : Finished instrumentation
+[09/28/14 18:45:36 -0400 Sugat-HP (15208)] INFO : Starting the New Relic agent in "development" environment.
+[09/28/14 18:45:36 -0400 Sugat-HP (15208)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/28/14 18:45:36 -0400 Sugat-HP (15208)] INFO : Reading configuration from config/newrelic.yml
+[09/28/14 18:45:36 -0400 Sugat-HP (15208)] INFO : New Relic Agent Developer Mode enabled.
+[09/28/14 18:45:36 -0400 Sugat-HP (15208)] ERROR : No application name configured.
+[09/28/14 18:45:36 -0400 Sugat-HP (15208)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/28/14 18:45:36 -0400 Sugat-HP (15208)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/28/14 18:45:36 -0400 Sugat-HP (15208)] ERROR : value set for app_name in the development 
+[09/28/14 18:45:36 -0400 Sugat-HP (15208)] ERROR : environment.
+[09/28/14 18:45:37 -0400 Sugat-HP (15208)] INFO : Installing ActiveRecord 4 instrumentation
+[09/28/14 18:45:37 -0400 Sugat-HP (15208)] INFO : Installing Net instrumentation
+[09/28/14 18:45:37 -0400 Sugat-HP (15208)] INFO : Installing deferred Rack instrumentation
+[09/28/14 18:45:37 -0400 Sugat-HP (15208)] INFO : Installing Rack::Builder middleware instrumentation
+[09/28/14 18:45:37 -0400 Sugat-HP (15208)] INFO : Installing Rails 3+ middleware instrumentation
+[09/28/14 18:45:37 -0400 Sugat-HP (15208)] INFO : Installing Rails 4 Controller instrumentation
+[09/28/14 18:45:37 -0400 Sugat-HP (15208)] INFO : Installing Rails 4 view instrumentation
+[09/28/14 18:45:37 -0400 Sugat-HP (15208)] INFO : Installing Rails 4 Error instrumentation
+[09/28/14 18:45:37 -0400 Sugat-HP (15208)] INFO : Finished instrumentation
+[09/29/14 21:42:37 -0400 Sugat-HP (7972)] INFO : Starting the New Relic agent in "development" environment.
+[09/29/14 21:42:37 -0400 Sugat-HP (7972)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[09/29/14 21:42:37 -0400 Sugat-HP (7972)] INFO : Reading configuration from config/newrelic.yml
+[09/29/14 21:42:37 -0400 Sugat-HP (7972)] INFO : New Relic Agent Developer Mode enabled.
+[09/29/14 21:42:37 -0400 Sugat-HP (7972)] ERROR : No application name configured.
+[09/29/14 21:42:37 -0400 Sugat-HP (7972)] ERROR : The Agent cannot start without at least one. Please check your 
+[09/29/14 21:42:37 -0400 Sugat-HP (7972)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[09/29/14 21:42:37 -0400 Sugat-HP (7972)] ERROR : value set for app_name in the development 
+[09/29/14 21:42:37 -0400 Sugat-HP (7972)] ERROR : environment.
+[09/29/14 21:42:38 -0400 Sugat-HP (7972)] INFO : Installing ActiveRecord 4 instrumentation
+[09/29/14 21:42:38 -0400 Sugat-HP (7972)] INFO : Installing Net instrumentation
+[09/29/14 21:42:38 -0400 Sugat-HP (7972)] INFO : Installing deferred Rack instrumentation
+[09/29/14 21:42:38 -0400 Sugat-HP (7972)] INFO : Installing Rack::Builder middleware instrumentation
+[09/29/14 21:42:38 -0400 Sugat-HP (7972)] INFO : Installing Rails 3+ middleware instrumentation
+[09/29/14 21:42:38 -0400 Sugat-HP (7972)] INFO : Installing Rails 4 Controller instrumentation
+[09/29/14 21:42:39 -0400 Sugat-HP (7972)] INFO : Installing Rails 4 view instrumentation
+[09/29/14 21:42:39 -0400 Sugat-HP (7972)] INFO : Installing Rails 4 Error instrumentation
+[09/29/14 21:42:39 -0400 Sugat-HP (7972)] INFO : Finished instrumentation
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] INFO : Starting the New Relic agent in "development" environment.
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] INFO : Reading configuration from config/newrelic.yml
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] INFO : New Relic Agent Developer Mode enabled.
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] ERROR : No application name configured.
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] ERROR : The Agent cannot start without at least one. Please check your 
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] ERROR : value set for app_name in the development 
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] ERROR : environment.
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] INFO : Installing ActiveRecord 4 instrumentation
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] INFO : Installing Net instrumentation
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] INFO : Installing deferred Rack instrumentation
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] INFO : Installing Rack::Builder middleware instrumentation
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] INFO : Installing Rails 3+ middleware instrumentation
+[10/02/14 22:13:06 -0400 Sugat-HP (3208)] INFO : Installing Rails 4 Controller instrumentation
+[10/02/14 22:13:07 -0400 Sugat-HP (3208)] INFO : Installing Rails 4 view instrumentation
+[10/02/14 22:13:07 -0400 Sugat-HP (3208)] INFO : Installing Rails 4 Error instrumentation
+[10/02/14 22:13:07 -0400 Sugat-HP (3208)] INFO : Finished instrumentation
+[10/02/14 22:13:30 -0400 Sugat-HP (3208)] INFO : Doing deferred dependency-detection before Rack startup
+[10/02/14 22:26:40 -0400 Sugat-HP (8824)] INFO : Starting the New Relic agent in "development" environment.
+[10/02/14 22:26:40 -0400 Sugat-HP (8824)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/02/14 22:26:40 -0400 Sugat-HP (8824)] INFO : Reading configuration from config/newrelic.yml
+[10/02/14 22:26:40 -0400 Sugat-HP (8824)] INFO : New Relic Agent Developer Mode enabled.
+[10/02/14 22:26:40 -0400 Sugat-HP (8824)] ERROR : No application name configured.
+[10/02/14 22:26:40 -0400 Sugat-HP (8824)] ERROR : The Agent cannot start without at least one. Please check your 
+[10/02/14 22:26:40 -0400 Sugat-HP (8824)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[10/02/14 22:26:40 -0400 Sugat-HP (8824)] ERROR : value set for app_name in the development 
+[10/02/14 22:26:40 -0400 Sugat-HP (8824)] ERROR : environment.
+[10/02/14 22:26:41 -0400 Sugat-HP (8824)] INFO : Installing ActiveRecord 4 instrumentation
+[10/02/14 22:26:41 -0400 Sugat-HP (8824)] INFO : Installing Net instrumentation
+[10/02/14 22:26:41 -0400 Sugat-HP (8824)] INFO : Installing deferred Rack instrumentation
+[10/02/14 22:26:41 -0400 Sugat-HP (8824)] INFO : Installing Rack::Builder middleware instrumentation
+[10/02/14 22:26:41 -0400 Sugat-HP (8824)] INFO : Installing Rails 3+ middleware instrumentation
+[10/02/14 22:26:41 -0400 Sugat-HP (8824)] INFO : Installing Rails 4 Controller instrumentation
+[10/02/14 22:26:42 -0400 Sugat-HP (8824)] INFO : Installing Rails 4 view instrumentation
+[10/02/14 22:26:42 -0400 Sugat-HP (8824)] INFO : Installing Rails 4 Error instrumentation
+[10/02/14 22:26:42 -0400 Sugat-HP (8824)] INFO : Finished instrumentation
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] INFO : Starting the New Relic agent in "development" environment.
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] INFO : Reading configuration from config/newrelic.yml
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] INFO : New Relic Agent Developer Mode enabled.
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] ERROR : No application name configured.
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] ERROR : The Agent cannot start without at least one. Please check your 
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] ERROR : value set for app_name in the development 
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] ERROR : environment.
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] INFO : Installing ActiveRecord 4 instrumentation
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] INFO : Installing Net instrumentation
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] INFO : Installing deferred Rack instrumentation
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] INFO : Installing Rack::Builder middleware instrumentation
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] INFO : Installing Rails 3+ middleware instrumentation
+[10/06/14 19:51:54 -0400 Sugat-HP (3756)] INFO : Installing Rails 4 Controller instrumentation
+[10/06/14 19:51:55 -0400 Sugat-HP (3756)] INFO : Installing Rails 4 view instrumentation
+[10/06/14 19:51:55 -0400 Sugat-HP (3756)] INFO : Installing Rails 4 Error instrumentation
+[10/06/14 19:51:55 -0400 Sugat-HP (3756)] INFO : Finished instrumentation
+[10/06/14 19:52:13 -0400 Sugat-HP (3756)] INFO : Doing deferred dependency-detection before Rack startup
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] INFO : Starting the New Relic agent in "development" environment.
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] INFO : Reading configuration from config/newrelic.yml
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] INFO : New Relic Agent Developer Mode enabled.
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] ERROR : No application name configured.
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] ERROR : The Agent cannot start without at least one. Please check your 
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] ERROR : value set for app_name in the development 
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] ERROR : environment.
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] INFO : Installing ActiveRecord 4 instrumentation
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] INFO : Installing Net instrumentation
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] INFO : Installing deferred Rack instrumentation
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] INFO : Installing Rack::Builder middleware instrumentation
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] INFO : Installing Rails 3+ middleware instrumentation
+[10/06/14 19:58:32 -0400 Sugat-HP (2860)] INFO : Installing Rails 4 Controller instrumentation
+[10/06/14 19:58:33 -0400 Sugat-HP (2860)] INFO : Installing Rails 4 view instrumentation
+[10/06/14 19:58:33 -0400 Sugat-HP (2860)] INFO : Installing Rails 4 Error instrumentation
+[10/06/14 19:58:33 -0400 Sugat-HP (2860)] INFO : Finished instrumentation
+[10/06/14 19:58:50 -0400 Sugat-HP (2860)] INFO : Doing deferred dependency-detection before Rack startup
