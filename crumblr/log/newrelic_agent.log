@@ -1073,3 +1073,22 @@
 [10/15/14 21:58:21 -0400 Sugat-HP (8172)] INFO : Installing Rails 4 Error instrumentation
 [10/15/14 21:58:21 -0400 Sugat-HP (8172)] INFO : Finished instrumentation
 [10/15/14 21:58:35 -0400 Sugat-HP (8172)] INFO : Doing deferred dependency-detection before Rack startup
+[10/20/14 22:59:03 -0400 Sugat-HP (20936)] INFO : Starting the New Relic agent in "development" environment.
+[10/20/14 22:59:03 -0400 Sugat-HP (20936)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/20/14 22:59:03 -0400 Sugat-HP (20936)] INFO : Reading configuration from config/newrelic.yml (C:/Sites/ThinkBlog/crumblr)
+[10/20/14 22:59:03 -0400 Sugat-HP (20936)] INFO : New Relic Agent Developer Mode enabled.
+[10/20/14 22:59:03 -0400 Sugat-HP (20936)] ERROR : No application name configured.
+[10/20/14 22:59:03 -0400 Sugat-HP (20936)] ERROR : The Agent cannot start without at least one. Please check your 
+[10/20/14 22:59:03 -0400 Sugat-HP (20936)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[10/20/14 22:59:03 -0400 Sugat-HP (20936)] ERROR : value set for app_name in the development 
+[10/20/14 22:59:03 -0400 Sugat-HP (20936)] ERROR : environment.
+[10/20/14 22:59:03 -0400 Sugat-HP (20936)] INFO : Installing ActiveRecord 4 instrumentation
+[10/20/14 22:59:03 -0400 Sugat-HP (20936)] INFO : Installing Net instrumentation
+[10/20/14 22:59:04 -0400 Sugat-HP (20936)] INFO : Installing deferred Rack instrumentation
+[10/20/14 22:59:04 -0400 Sugat-HP (20936)] INFO : Installing Rack::Builder middleware instrumentation
+[10/20/14 22:59:04 -0400 Sugat-HP (20936)] INFO : Installing Rails 3+ middleware instrumentation
+[10/20/14 22:59:04 -0400 Sugat-HP (20936)] INFO : Installing Rails 4 Controller instrumentation
+[10/20/14 22:59:04 -0400 Sugat-HP (20936)] INFO : Installing Rails 4 view instrumentation
+[10/20/14 22:59:04 -0400 Sugat-HP (20936)] INFO : Installing Rails 4 Error instrumentation
+[10/20/14 22:59:04 -0400 Sugat-HP (20936)] INFO : Finished instrumentation
+[10/20/14 22:59:23 -0400 Sugat-HP (20936)] INFO : Doing deferred dependency-detection before Rack startup
