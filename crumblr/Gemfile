@@ -46,4 +46,11 @@ gem 'rails_12factor', group: :production
 gem 'newrelic_rpm'
 
 # Add user authentication using devise
+<<<<<<< Updated upstream
 gem 'devise'
+=======
+gem 'devise'
+#Adding YAML 
+#Add facebook notification via Omniauth
+gem 'omniauth-facebook'
+>>>>>>> Stashed changes
